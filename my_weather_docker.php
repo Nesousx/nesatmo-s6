@@ -1,5 +1,7 @@
 <?php
 
+// Most PHP code from PhenX - https://github.com/PhenX, many thanks to him!!
+
 // Netatmo SDK, cf. https://github.com/Netatmo/Netatmo-API-PHP
 
 require_once("/Netatmo-API-PHP-master/src/Netatmo/autoload.php");
