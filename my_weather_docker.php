@@ -2,7 +2,7 @@
 
 // Netatmo SDK, cf. https://github.com/Netatmo/Netatmo-API-PHP
 
-require_once("/Netatmo-API-PHP/src/Netatmo/autoload.php");
+require_once("/Netatmo-API-PHP-master/src/Netatmo/autoload.php");
 use Netatmo\Clients\NAWSApiClient;
 use Netatmo\Exceptions\NAClientException;
 
