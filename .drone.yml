@@ -1,8 +1,12 @@
 pipeline:
   docker:
     image: plugins/docker
-    #commands:
-    #  - docker build .
     repo: nesousx/nesatmo-s6
     secrets: [ docker_username, docker_password ]
     tags: latest
+  telegram:
+    image: appleboy/drone-telegram
+    secrets: [ telegram_token, telegram_user_id ]
+    when:
+      status: [ success, failure ]
+
