@@ -2,7 +2,7 @@ pipeline:
   build:
     image: docker
     commands:
-      - docker build
+      - docker build -t nesatmo-plop .
   publish:        
     image: plugins/docker
     username: $docker_username
