@@ -1,11 +1,11 @@
 pipeline:
   build:
     image: plugins/docker
+    repo: nesousx/nesatmo-s6
     commands:
-      - docker build -t nesatmo-plop .
+      - docker build .
   publish:        
     image: plugins/docker
-    username: $docker_username
-    password: $docker_password
     repo: nesousx/nesatmo-s6
+    secrets: [ docker_username, docker_password ]
     tags: latest
