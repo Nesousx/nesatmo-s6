@@ -1,6 +1,6 @@
 pipeline:
   build:
-    image: docker
+    image: plugins/docker
     commands:
       - docker build -t nesatmo-plop .
   publish:        
