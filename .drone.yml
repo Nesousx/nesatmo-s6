@@ -1,6 +1,6 @@
 pipeline:
-  docker:
-    image: nesousx/nesatmo-s6
+  publish:
+    image: plugins/docker
     username: $DOCKER_USER
     password: $DOCKER_PASS
     repo: nesousx/nesatmo-s6
