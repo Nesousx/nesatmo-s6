@@ -1,7 +1,7 @@
 pipeline:
   build:
     image: plugins/docker
-    repo: nesousx/nesatmo-s6
+    #    repo: nesousx/nesatmo-s6
     commands:
       - docker build .
   publish:        
