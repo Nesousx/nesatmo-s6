@@ -6,7 +6,8 @@ pipeline:
     tags: latest
   telegram:
     image: appleboy/drone-telegram
-    secrets: [ telegram_token, telegram_user_id ]
+    to: telegram_user_id
+    token: telegram_token,
     when:
       status: [ success, failure ]
 
