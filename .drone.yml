@@ -1,7 +1,11 @@
 pipeline:
-  publish:
+  build:
+    image: docker
+    commands:
+      - docker build
+  publish:        
     image: plugins/docker
-    username: $DOCKER_USER
-    password: $DOCKER_PASS
+    username: $docker_username
+    password: $docker_password
     repo: nesousx/nesatmo-s6
     tags: latest
