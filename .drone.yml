@@ -1,8 +1,8 @@
 pipeline:
   docker:
     image: plugins/docker
-    commands:
-      - docker build .
+    #commands:
+    #  - docker build .
     repo: nesousx/nesatmo-s6
     secrets: [ docker_username, docker_password ]
     tags: latest
