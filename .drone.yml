@@ -1,11 +1,8 @@
 pipeline:
-  build:
+  docker:
     image: plugins/docker
-    auto_tag: true
     commands:
       - docker build .
-  publish:        
-    image: plugins/docker
     repo: nesousx/nesatmo-s6
     secrets: [ docker_username, docker_password ]
     tags: latest
