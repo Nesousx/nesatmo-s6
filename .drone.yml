@@ -1,0 +1,7 @@
+pipeline:
+  docker:
+    image: nesousx/nesatmo-s6
+    username: $DOCKER_USER
+    password: $DOCKER_PASS
+    repo: nesousx/nesatmo-s6
+    tags: latest
