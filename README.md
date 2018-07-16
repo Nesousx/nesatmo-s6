@@ -27,7 +27,7 @@ version: '2'
 services:
     nesatmo:
         container_name: nesatmo
-        image: nesousx/nesatmo
+        image: nesousx/nesatmo-s6-auto
         restart: unless-stopped
         environment:
           - NETATMO_CLIENT_ID=yourclientid
