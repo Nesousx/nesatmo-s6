@@ -1,0 +1,15 @@
+version: '2'
+services:
+    nesatmo:
+        container_name: nesatmo
+        image: nesousx/nesatmo-s6-auto
+        restart: unless-stopped
+        environment:
+          - NETATMO_CLIENT_ID=yourclientid
+          - NETATMO_CLIENT_SECRET=yourclientsecret
+          - NETATMO_CLIENT_USERNAME=your-netatmo-user
+          - NETATMO_CLIENT_PASSWORD=your-netatmo-pass
+          - INFLUX_URL_WITH_PORT=https://my.server.com:8086
+          - INFLUX_DB=testdb
+          - INFLUX_USER=testuser
+          - INFLUX_PASS=testpass
